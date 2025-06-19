@@ -16,6 +16,11 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["development"]
+    "customConditions": ["development"],
+    "paths": {
+      "availability/Module": ["apps/availability/src/remote-entry.ts"],
+      "logs/Module": ["apps/logs/src/remote-entry.ts"]
+    },
+    "baseUrl": "."
   }
 }

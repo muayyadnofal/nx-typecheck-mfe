@@ -1,0 +1,18 @@
+{
+  "name": "availability",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/availability/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "options": {
+        "port": 4201
+      },
+      "dependsOn": ["typecheck", "shell:serve"]
+    },
+    "build": {
+      "dependsOn": ["^build", "typecheck"]
+    }
+  }
+}
